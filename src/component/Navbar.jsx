@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const menuList = ["전체", "리니어", "택타일", "저소음", "게이밍"];
 
   return (
@@ -13,12 +14,14 @@ const Navbar = () => {
           <i>
             <FontAwesomeIcon icon={faUser} />
           </i>
-          <p>로그인</p>
         </div>
-        <div className="search-bar">
-          <i>
-            <FontAwesomeIcon icon={faSearch} />
-          </i>
+        <div className={`search-bar ${isOpen ? "active" : ""}`}>
+          <FontAwesomeIcon
+            icon={faSearch}
+            className="search-icon"
+            onClick={() => setIsOpen(!isOpen)}
+          />
+          <input placeholder="검색어를 입력하세요" />
         </div>
       </div>
       <div className="logo-image">
