@@ -1,0 +1,208 @@
+/* 변수 */
+@import url("/src/index.css");
+/* 폰트 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+/* 영문 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+header {
+  width: 100%;
+  padding: 0 5%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.navigation {
+  max-width: 1350px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.top-menu {
+  display: flex;
+  margin-left: auto;
+  gap: 10px;
+}
+.login-button {
+  display: flex;
+  margin-left: auto;
+}
+.logo-image {
+  text-align: center;
+}
+.logo-image > img {
+  max-width: 160px;
+  height: auto;
+  width: 100%;
+}
+.menu-area {
+  padding: 10px 0;
+  box-sizing: border-box;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+.menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.menu-list li {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.84px;
+}
+.menu-list li:hover {
+  color: var(--main);
+  font-weight: 600;
+}
+
+main.content {
+  max-width: 1350px;
+  min-width: 320px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+.product-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.product-wrap > div {
+  width: calc((100% - 60px) / 3);
+}
+
+.product-wrap > div dl {
+}
+.card-box {
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+.card-box dt {
+  position: relative;
+  overflow: hidden;
+}
+.card-box dt img {
+  width: 100%;
+  box-sizing: border-box;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.card-box dt p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px;
+  box-sizing: border-box;
+  background: var(--sub);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-box dd {
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.card-box dd h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  line-height: 120%;
+  color: var(--black);
+
+  margin-bottom: 6px;
+}
+.card-box dd p {
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  color: var(--black);
+  font-weight: 400;
+}
+
+.card-box:hover dt img {
+  transform: scale(1.1);
+  transition: all 0.4s linear;
+}
+.card-box:hover dd h3 {
+  color: var(--sub);
+}
+
+/*******************************************************************************
+    @media  ~980px               
+*******************************************************************************/
+@media all and (max-width: 980px) {
+  .logo-image > img {
+    max-width: 120px;
+  }
+
+  .menu-list li {
+    letter-spacing: -0.64px;
+  }
+
+  .product-wrap {
+    gap: 20px;
+  }
+  .product-wrap > div {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .card-box dd {
+    padding: 10px 0;
+  }
+  .card-box dd h3 {
+    font-size: 1.1rem;
+    letter-spacing: -0.1px;
+  }
+  .card-box dd p {
+    font-size: 1.02rem;
+  }
+}
+/*******************************************************************************
+    @media 481~680px
+*******************************************************************************/
+@media all and (max-width: 680px) {
+  .navigation {
+    padding: 16px 0;
+  }
+  .top-menu {
+    gap: 10px;
+  }
+  .logo-image > img {
+    max-width: 90px;
+  }
+  .menu-area {
+    padding: 8px 0;
+    margin-top: 16px;
+  }
+  .menu-list {
+    gap: 16px;
+  }
+  .menu-list li {
+    letter-spacing: -0.56px;
+  }
+
+  .product-wrap {
+    gap: 20px;
+  }
+  .product-wrap > div {
+    width: 100%;
+  }
+
+  .card-box dt p {
+    padding: 4px;
+    font-size: 13px;
+  }
+
+  .card-box dd h3 {
+    font-size: 1.05rem;
+
+    margin-bottom: 4px;
+  }
+  .card-box dd p {
+    font-size: 0.96rem;
+  }
+}
