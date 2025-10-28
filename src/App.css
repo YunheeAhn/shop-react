@@ -21,12 +21,33 @@ header {
 }
 .top-menu {
   display: flex;
+  align-items: center;
+
   margin-left: auto;
   gap: 10px;
+
+  transition: all 0.3s ease;
 }
 .login-button {
   display: flex;
   margin-left: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-weight: 600;
+}
+.search-bar {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.login-button:hover {
+  color: var(--sub);
+  font-weight: 600;
+}
+.search-bar:hover {
+  color: var(--sub);
+  font-weight: 600;
 }
 .logo-image {
   text-align: center;
@@ -131,6 +152,37 @@ main.content {
   color: var(--sub);
 }
 
+/* 검색창 */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* input 초기 */
+.search-bar input {
+  width: 0;
+  opacity: 0;
+  transform: translateX(20px);
+  border: none;
+  outline: none;
+  padding: 0;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid var(--sub);
+  margin-left: 5px;
+  transition: width 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* 활성화  */
+.search-bar.active input {
+  width: 160px;
+  opacity: 1;
+  transform: translateX(0);
+  padding: 0 8px;
+}
+
 /*******************************************************************************
     @media  ~980px               
 *******************************************************************************/
@@ -169,7 +221,7 @@ main.content {
     padding: 16px 0;
   }
   .top-menu {
-    gap: 10px;
+    gap: 6px;
   }
   .logo-image > img {
     max-width: 90px;
@@ -204,5 +256,9 @@ main.content {
   }
   .card-box dd p {
     font-size: 0.96rem;
+  }
+
+  .search-bar.active input {
+    width: 120px;
   }
 }
