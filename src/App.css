@@ -56,6 +56,8 @@ header {
   max-width: 160px;
   height: auto;
   width: 100%;
+
+  cursor: pointer;
 }
 .menu-area {
   padding: 10px 0;
@@ -193,6 +195,201 @@ main.content {
   opacity: 1;
   transform: translateX(0);
   padding: 0 8px;
+}
+
+/* 로그인페이지 */
+.login-section {
+}
+.login-section .text-cont {
+  text-align: center;
+}
+.login-section .text-cont h3 {
+  font-size: 3.4rem;
+  color: var(--main);
+  font-weight: 700;
+  letter-spacing: -0.1px;
+}
+.login-section .text-cont p {
+  color: var(--black);
+  font-size: 1.2rem;
+  letter-spacing: -0.56px;
+  line-height: 120%;
+}
+.login-section .text-cont p span {
+  color: var(--main);
+  font-weight: 600;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.login-form .control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.login-form .control + .control {
+  margin-top: 20px;
+}
+.login-form .control label {
+  font-size: 1.2rem;
+  letter-spacing: -0.64px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 6px;
+}
+.login-form .control input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.login-form .control input::placeholder {
+  font-size: 0.9rem;
+  font-family: var(--eng);
+  letter-spacing: 0 !important;
+}
+.login-form .control input:focus {
+  border-color: var(--black);
+}
+.login-form .control button {
+  width: 100%;
+  background: var(--sub);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 16px 0 5px;
+  overflow: hidden;
+
+  position: relative;
+  transition: all 0.4s linear;
+}
+.login-form .control button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+
+  background: var(--white);
+  transition: all 0.4s linear;
+}
+.login-form .control button span {
+  color: var(--white);
+  width: 100%;
+  display: block;
+  font-size: 1.2rem;
+
+  z-index: 9;
+}
+.login-form .control button:hover::before {
+  width: 100%;
+}
+.login-form .control button:hover span {
+  color: var(--sub);
+}
+.login-form .control p {
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: -0.54px;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.login-form .control p:hover {
+  color: Var(--black);
+}
+/* 상세페이지 */
+.pro-view {
+}
+.pro-cont {
+  margin-bottom: 80px;
+}
+.pro-cont dl {
+  display: flex;
+}
+.pro-cont dl dt {
+  width: 45%;
+}
+.pro-cont dl dt img {
+  width: 100%;
+  height: auto;
+}
+.pro-cont dl dd {
+  width: 55%;
+  margin-left: 40px;
+
+  padding: 60px 0 0 0;
+}
+.pro-cont dl dd span {
+  display: inline-block;
+  background: var(--light);
+  padding: 3px 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  font-size: 14px;
+  color: var(--white);
+  font-weight: 600;
+}
+.pro-cont dl dd h3 {
+  color: var(--black);
+  margin: 10px 0 20px;
+
+  font-size: 2.2rem;
+  letter-spacing: -0.54px;
+}
+.pro-cont dl dd p {
+  font-size: 1.6rem;
+  color: Var(--black);
+}
+.pro-cont dl dd .choice {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+.pro-cont dl dd .choice button {
+  background: var(--white);
+  border: 1px solid var(--light);
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-size: 1rem;
+
+  transition: all 0.3s ease;
+}
+.pro-cont dl dd .choice button:hover {
+  border-color: var(--sub);
+  color: var(--black);
+}
+.detail-info {
+}
+.detail-info h4 {
+  background: var(--grayBg);
+
+  padding: 10px 12px;
+  box-sizing: border-box;
+
+  font-size: 1.6rem;
+  color: Var(--black);
+}
+.detail-info img {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}
+.detail-info {
 }
 
 /*******************************************************************************
