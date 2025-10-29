@@ -33,6 +33,9 @@ const ProductDetail = () => {
                 <button key={index}>{size}</button>
               ))}
             </div>
+            <div className="purchase">
+              <button>구매하기</button>
+            </div>
           </dd>
         </dl>
       </div>
