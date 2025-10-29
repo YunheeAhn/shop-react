@@ -17,11 +17,11 @@ const LoginPage = ({ setAuthenticate }) => {
   };
 
   return (
-    <div>
+    <div className="login-section">
       <div className="text-cont">
         <h3>로그인</h3>
         <p>
-          요청하신 메뉴는 <span>로그인 후 이용 가능</span>한 메뉴 입니다.
+          상품페이지는 <span>로그인 후 이용 가능</span>한 메뉴 입니다.
         </p>
       </div>
 
@@ -42,9 +42,9 @@ const LoginPage = ({ setAuthenticate }) => {
           </div>
           <div className="control">
             <button className="login-button" type="submit">
-              로그인
+              <span>로그인</span>
             </button>
-            <p>회원가입</p>
+            <p onClick={() => alert("준비중입니다")}>회원가입</p>
           </div>
         </form>
       </div>
