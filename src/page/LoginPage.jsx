@@ -1,6 +1,13 @@
 import React from "react";
 
 const LoginPage = () => {
+  const loginUser = () => {
+    // 매번 리프레시 하는 것 막기(form 태그 작성시 꼭 사용)
+    event.preventDefault();
+
+    console.log("login user function issue");
+  };
+
   return (
     <div>
       <div className="text-cont">
@@ -11,7 +18,7 @@ const LoginPage = () => {
       </div>
 
       <div className="login-cont">
-        <form action="" name="loginFrm" onSubmit={loginUser} className="login-form">
+        <form action="" name="loginFrm" onSubmit={() => loginUser(event)} className="login-form">
           <div className="control">
             <label>이메일</label>
             <input type="text" placeholder="Enter your Email" />
