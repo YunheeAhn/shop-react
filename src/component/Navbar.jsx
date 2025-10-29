@@ -33,7 +33,13 @@ const Navbar = () => {
         </div>
       </div>
       <div className="logo-image">
-        <img src="https://cdn.imweb.me/thumbnail/20240609/65c4aa6f22e32.png" alt="스웨그키" />
+        <img
+          src="https://cdn.imweb.me/thumbnail/20240609/65c4aa6f22e32.png"
+          alt="스웨그키"
+          onClick={() => {
+            navigate("/");
+          }}
+        />
       </div>
       <div className="menu-area">
         <ul className="menu-list">
