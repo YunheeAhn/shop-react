@@ -25,7 +25,7 @@ function App() {
       <main className="content">
         <Routes>
           <Route path="/" element={<ProductAll />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} setAuthenticate={setAuthenticate} />
           <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </main>
