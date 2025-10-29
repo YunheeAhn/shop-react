@@ -25,8 +25,8 @@ const ProductDetail = () => {
             <img src={product?.img} alt={product?.title} />
           </dt>
           <dd>
-            <span>{product?.title}</span>
-            <h3>{product?.menu}</h3>
+            <span>{product?.category}</span>
+            <h3>{product?.title}</h3>
             <p>{product?.price}원</p>
             <div className="choice">
               {product?.size?.map((size, index) => (
