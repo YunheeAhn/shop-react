@@ -108,13 +108,9 @@ main.content {
   flex-wrap: wrap;
   gap: 30px;
 }
-.product-wrap > div {
-  width: calc((100% - 60px) / 3);
-}
 
-.product-wrap > div dl {
-}
 .card-box {
+  width: calc((100% - 60px) / 3);
   transition: all 0.4s linear;
   cursor: pointer;
 }
@@ -214,7 +210,7 @@ main.content {
   .product-wrap {
     gap: 20px;
   }
-  .product-wrap > div {
+  .card-box {
     width: calc((100% - 20px) / 2);
   }
 
@@ -256,7 +252,7 @@ main.content {
   .product-wrap {
     gap: 20px;
   }
-  .product-wrap > div {
+  .card-box {
     width: 100%;
   }
 
