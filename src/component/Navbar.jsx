@@ -2,25 +2,33 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuList = ["전체", "리니어", "택타일", "저소음", "게이밍"];
+  const navigate = useNavigate();
+
+  const goToLogin = () => {
+    navigate("/login");
+  };
 
   return (
     <div className="navigation">
       <div className="top-menu">
-        <div className="login-button">
+        <div className="login-button" onClick={goToLogin}>
           <i>
             <FontAwesomeIcon icon={faUser} />
           </i>
         </div>
         <div className={`search-bar ${isOpen ? "active" : ""}`}>
-          <FontAwesomeIcon
-            icon={faSearch}
-            className="search-icon"
-            onClick={() => setIsOpen(!isOpen)}
-          />
+          <i>
+            <FontAwesomeIcon
+              icon={faSearch}
+              className="search-icon"
+              onClick={() => setIsOpen(!isOpen)}
+            />
+          </i>
           <input placeholder="검색어를 입력하세요" />
         </div>
       </div>
