@@ -2,143 +2,157 @@
   "products": [
     {
       "id": 0,
-      "menu": "리니어",
+      "category": "리니어",
       "img": "https://cdn.imweb.me/thumbnail/20251022/628798582d1e1.jpg",
       "title": "HMX Mango Pudding 키보드 스위치",
       "price": 380,
       "choice": true,
       "new": true,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/f20251022ed7c67b464b34.png?w=1080"
     },
     {
       "id": 1,
-      "menu": "리니어",
+      "category": "리니어",
       "img": "https://cdn.imweb.me/thumbnail/20251021/785bbdd59c833.jpeg",
       "title": "Vertex V1 리니어 스위치",
       "price": 380,
       "choice": true,
       "new": true,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/f225de8d46522.png?w=1080"
     },
     {
       "id": 2,
-      "menu": "리니어",
+      "category": "리니어",
       "img": "https://cdn.imweb.me/thumbnail/20250929/20e180cf66330.jpg",
       "title": "Cherry MX2A Blossom 키보드 스위치",
       "price": 490,
       "choice": true,
       "new": true,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/f2025092915aec1727d826.png?w=1080"
     },
     {
       "id": 3,
-      "menu": "택타일",
+      "category": "택타일",
       "img": "https://cdn.imweb.me/thumbnail/20250926/70bfcffdf151a.png",
       "title": "TTC 피넛 라떼 저소음 택타일 스위치",
       "price": 550,
       "choice": false,
       "new": true,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/2cbd070c1af9a.png?w=1080"
     },
     {
       "id": 4,
-      "menu": "택타일",
-      "img": "https://cdn.imweb.me/thumbnail/20250926/d5b7ccc85c567.png",
-      "title": "게이트론 Melodic 기계식 키보드 스위치",
-      "price": 690,
+      "category": "택타일",
+      "img": "https://cdn.imweb.me/thumbnail/20251022/006ca6aadd7ad.jpg",
+      "title": "Gateron Lanes 레인스 키보드 스위치",
+      "price": 780,
       "choice": true,
       "new": false,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/f2025102210cebd3d885d1.png?w=1080"
     },
     {
       "id": 5,
-      "menu": "택타일",
+      "category": "택타일",
       "img": "https://cdn.imweb.me/thumbnail/20250110/90c7a7fd486da.jpeg",
       "title": "TTC 월백 V2 스위치",
       "price": 550,
       "choice": false,
       "new": false,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/10910024b71be.png?w=1080"
     },
     {
       "id": 6,
-      "menu": "저소음",
+      "category": "저소음",
       "img": "https://cdn.imweb.me/thumbnail/20250926/70bfcffdf151a.png",
       "title": "TTC 피넛 라떼 저소음 택타일 스위치",
       "price": 550,
       "choice": true,
       "new": false,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/2cbd070c1af9a.png?w=1080"
     },
     {
       "id": 7,
-      "menu": "저소음",
+      "category": "저소음",
       "img": "https://cdn.imweb.me/thumbnail/20250528/2c40fed862a50.jpg",
       "title": "게이트론 Absolute Zero 스위치 앱솔루트 제로",
       "price": 99900,
       "choice": false,
       "new": true,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/7cfbcd10a6d48.png?w=1080"
     },
     {
       "id": 8,
-      "menu": "저소음",
+      "category": "저소음",
       "img": "https://cdn.imweb.me/thumbnail/20250814/2a0911c5059be.jpg",
       "title": "Haimu 스노우 저소음 자석축 키보드 스위치",
       "price": 330,
       "choice": true,
       "new": true,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/d6b097ff9d094.png?w=1080"
     },
     {
       "id": 9,
-      "menu": "저소음",
+      "category": "저소음",
       "img": "https://cdn.imweb.me/thumbnail/20241122/e31acc0f5548f.jpg",
       "title": "TTC 아이스 프로즌 저소음 V2 커스텀 기계식 키보드 스위치",
       "price": 590,
       "choice": false,
       "new": true,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/8f81e7fec9792.png?w=1080"
     },
     {
       "id": 10,
-      "menu": "저소음",
+      "category": "저소음",
       "img": "https://cdn.imweb.me/thumbnail/20241121/becdbcc135d96.png",
       "title": "TTC 저소음 월백 택타일 스위치",
       "price": 620,
       "choice": true,
       "new": false,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/19f6eb01ac799.png?w=1080"
     },
     {
       "id": 11,
-      "menu": "게이밍",
+      "category": "게이밍",
       "img": "https://cdn.imweb.me/thumbnail/20241122/5f5caa303e974.jpg",
       "title": "NEO 라벤더 HE 마그네틱 스위치",
       "price": 580,
       "choice": true,
       "new": true,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/88ad1b9232cd1.png?w=1080"
     },
     {
       "id": 12,
-      "menu": "게이밍",
+      "category": "게이밍",
       "img": "https://cdn.imweb.me/thumbnail/20241122/29a460dd8eb9d.jpg",
       "title": "스웨그키 x SWK 피오니 HE 마그네틱 스위치",
       "price": 390,
       "choice": true,
       "new": true,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/ed5274d7b3242.png?w=1080"
     },
     {
       "id": 13,
-      "menu": "게이밍",
+      "category": "게이밍",
       "img": "https://cdn.imweb.me/thumbnail/20241122/03c39d32217d2.jpg",
       "title": "Fadog White V3 리니어 게이밍 스위치",
       "price": 240,
       "choice": false,
       "new": false,
-      "size": ["37g", "45g"]
+      "size": ["37g", "45g"],
+      "detailImg": "https://cdn-optimized.imweb.me/upload/S20220103536cb52c56eda/78642cfb62c41.png?w=1080"
     }
   ]
 }
