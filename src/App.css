@@ -354,7 +354,7 @@ main.content {
 .pro-cont dl dd .choice {
   display: flex;
   gap: 10px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .pro-cont dl dd .choice button {
   background: var(--white);
@@ -363,7 +363,7 @@ main.content {
 
   cursor: pointer;
 
-  padding: 15px 20px;
+  padding: 10px 16px;
   box-sizing: border-box;
   font-size: 1rem;
 
@@ -373,7 +373,37 @@ main.content {
   border-color: var(--sub);
   color: var(--black);
 }
+.pro-cont dl dd .purchase {
+  width: 100%;
+
+  margin-top: 50px;
+}
+.pro-cont dl dd .purchase button {
+  width: 100%;
+  padding: 16px 10px;
+  box-sizing: border-box;
+
+  background: var(--sub);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+}
+.pro-cont dl dd .purchase button:hover {
+  border-color: var(--sub);
+  background: var(--white);
+  color: var(--sub);
+}
 .detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .detail-info h4 {
   background: var(--grayBg);
@@ -388,6 +418,7 @@ main.content {
   max-width: 980px;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 .detail-info {
 }
@@ -420,6 +451,56 @@ main.content {
   }
   .card-box dd p {
     font-size: 1.02rem;
+  }
+
+  /* 상세페이지 */
+
+  .pro-cont {
+    margin-bottom: 60px;
+  }
+
+  .pro-cont dl dt {
+  }
+
+  .pro-cont dl dd {
+    margin-left: 30px;
+
+    padding: 20px 0 0 0;
+  }
+  .pro-cont dl dd span {
+    padding: 3px 10px;
+  }
+  .pro-cont dl dd h3 {
+    margin: 10px 0 16px;
+
+    font-size: 2rem;
+  }
+  .pro-cont dl dd p {
+    font-size: 1.4rem;
+  }
+  .pro-cont dl dd .choice {
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .pro-cont dl dd .choice button {
+    padding: 10px 12px;
+  }
+
+  .pro-cont dl dd .purchase {
+    margin-top: 35px;
+  }
+  .pro-cont dl dd .purchase button {
+    padding: 14px 10px;
+
+    font-size: 1.15rem;
+
+    border-radius: 10px;
+  }
+
+  .detail-info h4 {
+    padding: 10px 12px;
+
+    font-size: 1.4rem;
   }
 }
 /*******************************************************************************
@@ -469,5 +550,62 @@ main.content {
 
   .search-bar.active input {
     width: 120px;
+  }
+
+  /* 상세페이지 */
+
+  .pro-cont {
+    margin-bottom: 60px;
+  }
+
+  .pro-cont dl {
+    flex-wrap: wrap;
+  }
+  .pro-cont dl dt {
+    width: 100%;
+  }
+
+  .pro-cont dl dd {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+
+    padding: 0 0 0 0;
+  }
+  .pro-cont dl dd span {
+    padding: 3px 8px;
+    border-radius: 16px;
+  }
+  .pro-cont dl dd h3 {
+    margin: 10px 0 16px;
+
+    font-size: 1.75rem;
+  }
+  .pro-cont dl dd p {
+    font-size: 1.4rem;
+  }
+  .pro-cont dl dd .choice {
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .pro-cont dl dd .choice button {
+    padding: 8px 10px;
+  }
+
+  .pro-cont dl dd .purchase {
+    margin-top: 20px;
+  }
+  .pro-cont dl dd .purchase button {
+    padding: 12px 8px;
+
+    font-size: 1.05rem;
+
+    border-radius: 8px;
+  }
+
+  .detail-info h4 {
+    padding: 8px 10px;
+
+    font-size: 1.2rem;
   }
 }
