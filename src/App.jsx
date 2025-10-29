@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router";
 import "./App.css";
 import Navbar from "./component/Navbar";
@@ -16,7 +16,9 @@ import LoginPage from "./page/LoginPage";
 function App() {
   // 로그인 한 유저인지 아닌지 상태 확인
   const [authenticate, setAuthenticate] = useState(false); // false->로그인X
-
+  useEffect(() => {
+    console.log("aaa", authenticate);
+  }, [authenticate]);
   return (
     <>
       <header>
@@ -25,7 +27,7 @@ function App() {
       <main className="content">
         <Routes>
           <Route path="/" element={<ProductAll />} />
-          <Route path="/login" element={<LoginPage />} setAuthenticate={setAuthenticate} />
+          <Route path="/login" element={<LoginPage setAuthenticate={setAuthenticate} />} />
           <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </main>
