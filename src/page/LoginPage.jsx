@@ -9,7 +9,14 @@ const LoginPage = ({ setAuthenticate }) => {
     // 매번 리프레시 하는 것 막기(form 태그 작성시 꼭 사용)
     event.preventDefault();
 
-    console.log("login user function issue");
+    const email = event.target.email.value.trim();
+    const password = event.target.password.value.trim();
+
+    // 입력 체크
+    if (!email || !password) {
+      alert("이메일과 비밀번호를 모두 입력해주세요.");
+      return; // 입력이 없으면 로그인 진행 X
+    }
 
     // App.jsx의 setAuthenticate를 true로 변경
     setAuthenticate(true);
@@ -34,11 +41,11 @@ const LoginPage = ({ setAuthenticate }) => {
         >
           <div className="control">
             <label>이메일</label>
-            <input type="email" placeholder="Enter your Email" />
+            <input type="email" name="email" placeholder="Enter your Email" />
           </div>
           <div className="control">
             <label>비밀번호</label>
-            <input type="password" placeholder="Enter your Password" />
+            <input type="password" name="password" placeholder="Enter your Password" />
           </div>
           <div className="control">
             <button className="login-button" type="submit">
