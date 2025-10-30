@@ -13,6 +13,16 @@ const Navbar = () => {
     navigate("/login");
   };
 
+  // 엔터키 입력시 검색
+  const search = (event) => {
+    if (event.key === "Enter") {
+      // 입력한 검색어를 읽어와서
+      let keyword = event.target.value;
+      // url 을 바꿔준다
+      navigate(`/?q=${keyword}`);
+    }
+  };
+
   return (
     <div className="navigation">
       <div className="top-menu">
@@ -29,7 +39,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
             />
           </i>
-          <input placeholder="검색어를 입력하세요" />
+          <input placeholder="검색어를 입력하세요" onKeyPress={(event) => search(event)} />
         </div>
       </div>
       <div className="logo-image">
