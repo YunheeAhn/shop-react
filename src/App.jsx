@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <header>
-        <Navbar />
+        <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate} />
       </header>
       <main className="content">
         <Routes>

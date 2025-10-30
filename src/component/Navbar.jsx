@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRightFromBracket, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router";
 
-const Navbar = () => {
+const Navbar = ({ authenticate, setAuthenticate }) => {
   const [isOpen, setIsOpen] = useState(false);
   const menuList = ["전체", "리니어", "택타일", "저소음", "게이밍"];
   const navigate = useNavigate();
-
-  const goToLogin = () => {
-    navigate("/login");
-  };
 
   // 엔터키 입력시 검색
   const search = (event) => {
@@ -26,11 +22,26 @@ const Navbar = () => {
   return (
     <div className="navigation">
       <div className="top-menu">
-        <div className="login-button" onClick={goToLogin}>
-          <i>
-            <FontAwesomeIcon icon={faUser} />
-          </i>
-        </div>
+        {authenticate ? (
+          <div
+            className="login-button"
+            onClick={() => {
+              setAuthenticate(false);
+              navigate("/");
+            }}
+          >
+            <i>
+              <FontAwesomeIcon icon={faArrowRightFromBracket} />
+            </i>
+          </div>
+        ) : (
+          <div className="login-button" onClick={() => navigate("/login")}>
+            <i>
+              <FontAwesomeIcon icon={faUser} />
+            </i>
+          </div>
+        )}
+
         <div className={`search-bar ${isOpen ? "active" : ""}`}>
           <i>
             <FontAwesomeIcon
@@ -53,8 +64,8 @@ const Navbar = () => {
       </div>
       <div className="menu-area">
         <ul className="menu-list">
-          {menuList.map((menu) => (
-            <li>{menu}</li>
+          {menuList.map((menu, idx) => (
+            <li key={idx}>{menu}</li>
           ))}
         </ul>
       </div>
