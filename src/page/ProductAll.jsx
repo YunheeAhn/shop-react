@@ -22,8 +22,8 @@ const ProductAll = () => {
 
   return (
     <div className="product-wrap">
-      {productList.map((menu) => (
-        <ProductCard item={menu} />
+      {productList.map((menu, key) => (
+        <ProductCard id={key} item={menu} />
       ))}
     </div>
   );
